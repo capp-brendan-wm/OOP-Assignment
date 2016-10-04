@@ -71,7 +71,7 @@ $date = new DateTime();
     <title>The Open Blog</title>
 </head>
 
-<body>
+<body id="body">
 
 <div class="jumbotron">
 
@@ -106,8 +106,8 @@ $date = new DateTime();
 </div>
 </div>
 </div>
-
-<div class="container">
+<div id="full_post">
+<div id="blogPosts" class="container">
     <h1 id="posts_title">Posts</h1>
 
     <?php
@@ -129,7 +129,7 @@ $date = new DateTime();
             <p><?php echo $row['post'];?></p>
             </div>
             <div class="col-sm-1">
-            <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+            <form id="delete_button" method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
                 <input type="hidden" name="delete_id" value="<?php echo $row['id'];?>">
                 <input type="submit" name="delete" value="Delete">
             </form>
@@ -140,7 +140,7 @@ $date = new DateTime();
 
 </div>
 </div>
-
+</div>
 <footer id="row-footerr" class="row-footer" align="center">
     <div class="container">
         <div class="row row-footer">
@@ -168,6 +168,7 @@ $date = new DateTime();
         </div>
     </div>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 

@@ -1,6 +1,10 @@
 #titletop {
     text-align: center;
-    margin-bottom: 50px;
+    position: relative;
+    bottom: 51px;
+    background-color: #CACFD1;
+    border: 2px solid #839DA8;
+    padding-bottom: 25px;
 }
 
 #submit_button {
@@ -8,7 +12,8 @@
 }
 
 .jumbotron {
-    background-color: ghostwhite;
+    /*background-color: #CACFD1;*/
+    border: 2px solid #839DA8;
 }
 
 #posts_title {
@@ -16,9 +21,31 @@
 }
 
 #row-footerr {
-    background-color : ghostwhite;
+    background-color : #ACBDC4;
+    margin-top: 74px;
+    border: 2px solid #839DA8;
 }
 
 .navbar-nav {
     margin-left: 475px;
 }
+
+#author {
+    margin-left: 1px;
+}
+
+#title {
+    margin-left: 1px;
+}
+
+#post {
+    margin-left: 1px;
+}
+
+#delete_button {
+    margin-left: 19px;
+}
+
+/*#body {*/
+    /*background-color: #C2D0D6;*/
+/*}*/
