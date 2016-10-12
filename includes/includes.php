@@ -2,9 +2,9 @@
 
 class BlogPost {
     private $host = 'localhost';
-    private $user = 'root';
-    private $pass = 'root';
-    private $dbname = 'OOP_Assignment';
+    private $user = 'bcapp';
+    private $pass = '4RqfYp15';
+    private $dbname = 'bcapp';
 
     private $dbh;
     private $error;
